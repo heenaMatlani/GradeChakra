@@ -1,0 +1,262 @@
+.change-upload-grades {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ede6dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.change-upload-grades h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.change-upload-toggle-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.change-upload-toggle-btn {
+  width: 33.33%;
+  padding: 15px;
+  background-color: #d8d0c7;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.change-upload-toggle-btn.active {
+  background-color: #e4c49c;
+  color: black;
+  transform: translateY(-1px);
+}
+
+.fill-boxes {
+  margin-top: 20px;
+}
+
+.fill-boxes .grade-entry {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  width: 150px; /* Fixed width for labels */
+  margin-right: 10px; /* Gap between label and input */
+  font-size: 16px;
+}
+
+.input-group input,
+.input-group select {
+  flex: 1; /* Allow inputs to fill the available space */
+  padding: 10px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #877c71;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #388E3C; /* Darker green on hover */
+}
+
+.json-input {
+  margin-top: 20px;
+}
+
+.json-input textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: monospace;
+  height:530px;/* Monospace for better readability */
+}
+
+.remove-add-container{
+  display: flex;
+  justify-content: right;
+}
+.remove-grade, .add-grade-row {
+  text-align: center;
+  width:25%;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.remove-grade:hover , .add-grade-row:hover {
+  background-color: #776c61;  /* Adjust hover color */
+}
+
+.option-selector {
+    margin-bottom: 20px; /* Space between option selectors */
+}
+
+.option-selector label {
+    font-size: 16px;
+    margin-bottom: 8px; /* Space between label and input */
+    color: #555;
+    display: block; /* Ensures label is on a new line */
+}
+
+.large-input {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Increased padding for larger input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger font for better readability */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+
+/* Container for the download options */
+.download-options {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+/* Heading style for the download section */
+.download-options h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Style for the download ZIP button */
+.download-zip-button {
+  background-color: #877c71;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-zip-button:hover {
+  background-color: #776c61;
+}
+
+/* Container for uploading the ZIP file */
+.upload-zip {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.upload-zip label {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* File input style */
+.upload-zip input[type="file"] {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Style for the upload button */
+.upload-zip button {
+  background-color: #877c71;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-zip button:hover {
+  background-color: #776c61;
+}
+
+/* Auto generation section for PDF generation */
+.auto-generation {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.auto-generation button {
+  background-color: #877c71;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auto-generation button:hover {
+  background-color: #776c61;
+}
+
+/* Styling for the form and buttons in the context of grade handling */
+.auto-generation button:disabled,
+.upload-zip button:disabled,
+.download-zip-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Ensure a clean layout with good spacing between elements */
+.auto-generation,
+.upload-zip,
+.download-options {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add some padding to the input fields */
+input[type="file"] {
+  padding: 6px 12px;
+}
+
+.generate-or {
+text-align:center;
+padding-top:20px;
+}

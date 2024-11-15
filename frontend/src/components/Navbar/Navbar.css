@@ -1,0 +1,101 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #5d5852;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.institute-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-right: 15px;
+  font-size:35px;
+}
+
+.notification-icon {
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.user-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;  /* Adjust this based on user-icon height */
+  right: 0;
+  background-color: #504e4b;  /* Same as the navbar color */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  width: 150px;  /* Width of the dropdown */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);  /* Small slide effect */
+  opacity: 0;
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #3e3b37;  /* Slightly lighter hover effect */
+}
+
+.dropdown-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-icon {
+  cursor: pointer;
+}
+

@@ -1,0 +1,71 @@
+.course-grades-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ede6dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-grades-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #333;
+}
+
+.course-grades-table-container {
+  margin-top: 20px;
+}
+
+.course-grades-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.course-grades-table th,
+.course-grades-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.course-grades-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.course-grades-table tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+.course-grades-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.course-grades-table td {
+  font-size: 14px;
+}
+
+.result-download-button {
+  margin-top: 20px;
+  padding: 20px 20px;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.result-download-button:hover {
+  background-color: #776c61;
+}
+
+.results-button {
+display:flex;
+justify-content:center;
+}
+
+

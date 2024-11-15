@@ -1,0 +1,17 @@
+.staff-dashboard {
+  padding: 40px;
+}
+
+.staff-dashboard h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #333;
+}
+
+.staff-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}

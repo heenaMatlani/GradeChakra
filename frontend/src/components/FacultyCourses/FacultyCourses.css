@@ -1,0 +1,106 @@
+.faculty-courses-container {
+  margin: 20px auto;
+  width: 80%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.faculty-courses-container h2 {
+  text-align:center;
+}
+
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.courses-table th,
+.courses-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 19px;
+}
+
+.courses-table th {
+  background-color: #776c61;
+  color: white;
+  font-weight: bold;
+}
+
+.courses-table th:first-child, /* Targets only the "Details" header */
+.courses-table td:first-child {
+  width: 80px; /* Narrow width for the Details column */
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.expand-button {
+  background-color: #877c71;
+  border: none;
+  padding: 6px;
+  border-radius: 20%; /* Rounded button style */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s;
+}
+
+.expand-button:hover {
+  background-color: #776c61;
+}
+
+.arrow {
+  font-size: 14px;
+  color: white;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.course-details-row {
+  background-color: #cbb190;
+}
+
+.course-details {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.semester-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 100px;
+}
+
+.semester-info h4 {
+  margin: 0px;
+  font-size: 18px;
+  color: #333;
+}
+
+.download-button {
+  padding: 8px 12px;
+  background-color: #877c71;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #776c61;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}

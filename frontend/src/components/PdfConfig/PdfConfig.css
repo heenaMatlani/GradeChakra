@@ -1,0 +1,56 @@
+.pdf-config-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ede6dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-config-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.pdf-config-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.pdf-config-container select,
+.pdf-config-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.pdf-config-container button {
+  width: 48%;
+  padding: 10px;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 4%;
+  transition: background-color 0.3s;
+}
+
+.pdf-config-container button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.pdf-config-container button:hover {
+  background-color: #776c61;  /* Adjust hover color */
+}
+
+.pdf-config-container textarea {
+  height: 400px;
+}

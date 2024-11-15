@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../assets/LoginBackground.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-box {
+  position: relative;
+  width: 580px;
+  padding: 80px;
+  background-color: #e4c49c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.toggle-switch {
+  display: flex;
+  position: absolute;
+  top: -40px; /* Positioned on top of the login box */
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+
+.toggle-btn {
+  width: 50%;
+  padding: 15px;
+  background-color: #e7ded2;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-btn:first-child {
+  border-top-left-radius: 10px;
+}
+
+.toggle-btn:last-child {
+  border-top-right-radius: 10px;
+}
+
+.toggle-btn.active {
+  background-color: #e4c49c;
+  color: black;
+  transform: translateY(-2px); /* Creates the "lift" effect */
+}
+
+.login-container h1 {
+  padding-bottom: 15px;
+  font-size: 35px;
+}
+form input {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 80%;
+  padding: 15px;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #705e51;
+}

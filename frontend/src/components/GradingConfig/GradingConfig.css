@@ -1,0 +1,146 @@
+.grading-config-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ede6dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grading-config-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 24px;
+  color: #333;
+}
+
+.grading-config-toggle-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.grading-config-toggle-btn {
+  width: 50%;
+  padding: 15px;
+  background-color: #d8d0c7;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.grading-config-toggle-btn:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.grading-config-toggle-btn:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.grading-config-toggle-btn.active {
+  background-color: #e4c49c;
+  color: black;
+  transform: translateY(-1px); /* Creates the "lift" effect */
+}
+
+.grading-config-container h3,label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+  display: block;
+}
+
+input[type="number"], input[type="text"],textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.grading-config-container .button-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+}
+
+.button-container button {
+  width: 50%;
+  padding: 15px;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.button-container button:hover {
+  background-color: #776c61; /* Adjust hover color */
+}
+
+.json-text-area {
+  width: 100%;
+  height: 555px;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.grades-json-text-area {
+  height: 210px;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.calculate {
+  width:20%;
+  padding: 10px;
+  text-align:center;
+}
+
+.info-icon {
+  margin-left: 8px;
+  color: #555;
+  cursor: pointer;
+}
+
+.info-icon:hover {
+  color: #007bff;
+}
+
+.field-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group label {
+  font-weight: bold;
+}
+
+select {
+  margin-top: 5px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.description-text {
+  font-size: 13px;
+  color: #777;
+  margin-top: 0px;
+  padding: 8px;
+  padding-top:0;
+  display: flex;
+  align-items: center;
+}
+
+.description-text .info-icon {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #777;
+}

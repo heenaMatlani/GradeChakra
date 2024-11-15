@@ -1,0 +1,86 @@
+.overall-results-container {
+  padding: 20px;
+  text-align: center; /* Center-align all content within the container */
+}
+
+.overall-results-container h1 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-family: "Pangolin", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.student-results, .faculty-results {
+  margin-top: 20px;
+}
+
+table {
+  margin: 0 auto; /* Center the table */
+  width: 80%; /* Set width to 80% for a better layout */
+  border-collapse: collapse;
+  border: 2px solid #777068; /* Outer border color */
+}
+
+th, td {
+  padding: 15px; /* Increase padding for a better look */
+  text-align: left;
+  border: 1px solid #5d5852; /* Inner line border color */
+}
+
+th {
+  background-color: #e8dcc4; /* Light background for header */
+  font-size: 1.2em; /* Make the header font larger */
+}
+
+.student-results h3 {
+  margin-top: 30px; /* Add spacing above CPI */
+  font-size: 1.5em; /* Increase CPI title size */
+}
+
+.cpi {
+  margin-top: 30px;
+}
+
+.cpi-value {
+  margin-left: 10px; /* Add space between CPI label and value */
+}
+
+/* OverallResults.css */
+.overall-results-container {
+  padding: 20px;
+}
+
+.faculty-results {
+  margin-bottom: 20px; /* Add spacing between subjects */
+}
+
+.subject {
+  margin-bottom: 15px; /* Add spacing between each subject's chart */
+}
+
+.subject h3 {
+  margin-bottom: 10px; /* Spacing for subject title */
+}
+
+.chart-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center align the charts */
+  gap: 100px; /* Space between charts */
+}
+
+.chart-column {
+  flex: 1; /* Distribute space equally */
+  max-width: 350px; /* Ensure a max width */
+  margin: 10px; /* Add margin for spacing */
+}
+
+.faculty-results h3{
+  margin-top:20px;
+}
+
+.chart-column p {
+width:200px;
+}

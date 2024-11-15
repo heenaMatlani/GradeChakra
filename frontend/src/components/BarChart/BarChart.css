@@ -1,0 +1,7 @@
+/* BarChart.css */
+.bar-chart-container {
+  width: 100%; /* Full width for responsiveness */
+  height: 200px; /* Fixed height for the chart */
+  margin: 0 auto; /* Center the chart */
+}
+

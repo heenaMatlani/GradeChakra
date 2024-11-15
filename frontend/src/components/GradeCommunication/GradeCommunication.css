@@ -1,0 +1,42 @@
+.grade-communication {
+  padding: 20px;
+  text-align: center;
+}
+
+.grade-communication form {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.grade-communication textarea {
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+
+.grade-communication button {
+  padding: 10px 20px;
+  max-width:200px;
+  background-color: #5d5852;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.grade-communication button:hover {
+  background-color: #3e4b63;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: "Pangolin", cursive;
+  font-weight: 600;
+  font-style: normal;
+}

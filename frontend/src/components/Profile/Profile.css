@@ -1,0 +1,112 @@
+/* General layout for the profile page */
+.profile-container {
+  background-color: #e7ded2;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 60px;
+  margin-top: 100px;
+  border-radius: 10px;
+  border: 2px solid #877c71;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  color: #37444e;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-item span {
+  font-size: 1.1rem;
+}
+
+.profile-item:last-child {
+  border-bottom: none;
+}
+
+.profile-item {
+  color: #555;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .profile-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-label {
+    margin-bottom: 5px;
+  }
+}
+
+.change-password-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #877c71;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-change-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.password-change-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-password-change {
+  padding: 10px;
+  background-color: #877c71;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:30%;
+}
+
+.submit-password-change:hover, .change-password-button:hover {
+  background-color: #776c61;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}

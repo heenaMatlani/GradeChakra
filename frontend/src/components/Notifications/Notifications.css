@@ -1,0 +1,67 @@
+.notification-dropdown {
+  position: relative;
+}
+
+.notification-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-count {
+  position: absolute;
+  top: -10px; /* Adjust the vertical position */
+  right: -5px; /* Adjust the horizontal position */
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.notification-dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #504e4b;
+  color: white;
+  width: 300px;
+  max-height: 300px; /* Limits height and adds scroll */
+  overflow-y: auto;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.notification-dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-dropdown-menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+}
+
+.notification-dropdown-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.notification-dropdown-menu ul li:hover {
+  background-color: #3e3b37;
+}
+
+.unread {
+  font-weight: bold;
+}
+
+.read {
+  font-weight: normal;
+}

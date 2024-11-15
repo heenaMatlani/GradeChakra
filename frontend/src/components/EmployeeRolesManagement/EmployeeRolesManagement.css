@@ -1,0 +1,48 @@
+.role-management-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ede6dc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.role-management-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 35px;
+  font-size: 24px;
+  color: #333;
+}
+
+.role-management-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.role-management-container select,
+.role-management-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.role-management-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #877c71;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.role-management-container button:hover {
+  background-color: #776c61; /* Adjust hover color */
+}

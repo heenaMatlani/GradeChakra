@@ -1,0 +1,13 @@
+/* Layout.css */
+.container {
+  background-color: #e4c49c;
+  height: 100vh;
+  display: flex; /* Added flex display */
+  flex-direction: column; /* Vertical stacking */
+}
+
+.main-content {
+  flex: 1; /* Allow main content to grow and fill available space */
+  padding: 20px; /* Add some padding */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
