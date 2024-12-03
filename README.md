@@ -31,99 +31,106 @@ The **Grade Management System** is a dynamic, configurable platform designed to 
 
 ---
 
-## Project Structure  
+## Installation
 
-GradeManagementSystem/
-├── backend/
-│ ├── app.py
-│ ├── routes/
-│ │ ├── admin.py
-│ │ ├── grades.py
-│ │ ├── faculty.py
-│ │ ├── students.py
-│ └── services/
-│ ├── grading_system_service.py
-│ ├── pdfGenerationService.py
-│ ├── calculate_spi_cpi.py
-├── frontend/
-│ ├── public/
-│ │ ├── index.html
-│ │ └── favicon.ico
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── FacultyDashboard.js
-│ │ │ ├── StudentDashboard.js
-│ │ │ ├── ResultsTable.js
-│ │ ├── styles/
-│ │ │ ├── FacultyDashboard.css
-│ │ │ ├── ResultsTable.css
-│ │ │ ├── App.css
-│ ├── App.js
-│ ├── index.js
-│ └── package.json
-└── README.md
+### Prerequisites
+Ensure the following are installed on your system:
+- **Python** (3.8 or later)
+- **Node.js** (for React)
+- **MySQL**
 
+### Backend Installation (Flask)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/heenaMatlani/GradeChakra
+   cd backend
+   ```
+
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install Flask mysql-connector-python
+   ```
+
+4. Set up `config.py` file for database configurations:
+   ```env
+   DB_HOST=localhost
+   DB_USER=root
+   DB_PASSWORD=your_password
+   ```
+
+5. Initialize the database:
+   - Run `queries.sql` to create all necessary tables:
+     ```bash
+     mysql -u root -p GradeManagementSystem < queries.sql
+     ```
+   - Run `dummydata.sql` to populate dummy data:
+     ```bash
+     mysql -u root -p GradeManagementSystem < dummydata.sql
+     ```
+
+6. Start the Flask server:
+   ```bash
+   flask run
+   ```
+
+### Frontend Installation (React)
+1. Navigate to the frontend directory:
+   ```bash
+   cd ../frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
 
 ---
 
-## Installation  
+### Starting the Application
+- Backend runs on `http://127.0.0.1:5000`
+- Frontend runs on `http://127.0.0.1:3000`
 
-### Prerequisites  
-- **Backend**: Python 3.10+, Flask, Flask-CORS, MySQL, ReportLab, Pandas, Pytest  
-- **Frontend**: Node.js, React.js  
+---
 
-### Setup  
+## Technologies Used
 
-1. **Clone the Repository**  
-   ```bash  
-   git clone https://github.com/your-username/GradeManagementSystem.git  
-   cd GradeManagementSystem  
-Backend
+### Backend
+- **Flask**: Web framework
+- **MySQL**: Database
+- **mysql-connector-python**: Database connectivity
+- **reportlab**: PDF generation library
 
-Navigate to the backend folder:
-bash
-Copy code
-cd backend  
-Create a virtual environment and activate it:
-bash
-Copy code
-python3 -m venv venv  
-source venv/bin/activate  # Linux/Mac  
-venv\Scripts\activate     # Windows  
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt  
-Set up the database (MySQL):
-sql
-Copy code
-CREATE DATABASE GradeManagement;  
-Import the database schema from schema.sql.
-Run the backend server:
-bash
-Copy code
-python app.py  
-Frontend
+### Frontend
+- **React**: Frontend framework
+- **Axios**: For API calls
 
-Navigate to the frontend folder:
-bash
-Copy code
-cd ../frontend  
-Install dependencies:
-bash
-Copy code
-npm install  
-Start the React development server:
-bash
-Copy code
-npm start  
-API Endpoints
-Authentication
-POST /login – Authenticate users and generate JWT tokens.
-Grading Rules Management
-POST /admin/grading-rules – Add new grading rules.
-GET /admin/grading-rules – Retrieve all grading rules.
-Grade Upload and Management
-POST /grades/upload – Upload grades via Excel or JSON.
-GET /grades/student-report – Generate and download student PDF grade reports.
-GET /grades/faculty-report – Retrieve grades for faculty-specific course
+---
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit and push your changes:
+   ```bash
+   git commit -m "Description of changes"
+   git push origin feature-name
+   ```
+4. Submit a pull request.
+
+---
+
+## Contact
+For queries or support, contact **Heena Matlani** at [heenamatlani07@gmail.com].
